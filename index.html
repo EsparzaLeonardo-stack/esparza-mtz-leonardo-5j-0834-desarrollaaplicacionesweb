@@ -125,33 +125,24 @@
                 <label for="mensaje">Mensaje:</label><br>
                 <textarea id="mensaje" name="mensaje" rows="4" cols="50" required placeholder="Escribe tu mensaje aquí..."></textarea><br><br>
 
-                <!-- Botón de Envío -->
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+             <!-- Botón de Envío de formulario -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
 
-        <!-- Mensaje simple que aparece al presionar Enviar -->
-        <p id="mensajeRespuesta" hidden>Gracias</p>
+    <br><br>
+
+    <!-- Sección de confirmación con el identificador #gracias al cual llega la página al hacer submit -->
+    <div id="gracias" align="center">
+        <p>Gracias</p>
     </div>
 
     <br><hr><br>
 
-    <!-- Pie de página con datos-->
+    <!-- Pie de página con los datos del alumno -->
     <footer align="center">
-        Esparza Martínez Leonardo 5-J 24308051280834
+        <p>Esparza Martínez Leonardo 5-J 24308051280834</p>
     </footer>
-
-    <!-- Función en JavaScript para ocultar los campos y mostrar Gracias al enviar -->
-    <script>
-        function enviarMensaje(event) {
-            // Evita que la página se recargue
-            event.preventDefault();
-            // Oculta las casillas del formulario
-            document.getElementById('contenedor-formulario').hidden = true;
-            // Muestra el texto "Gracias"
-            document.getElementById('mensajeRespuesta').hidden = false;
-        }
-    </script>
 
 </body>
 </html>
